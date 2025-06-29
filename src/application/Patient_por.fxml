@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Patient_portal">
+   <children>
+      <AnchorPane fx:id="Main_form" prefHeight="436.0" prefWidth="275.0">
+         <children>
+            <AnchorPane id="Anchorpane" fx:id="Register_form" layoutX="7.0" layoutY="5.0" prefHeight="579.0" prefWidth="332.0" styleClass="white_bg" stylesheets="@application.css" visible="false">
+               <children>
+                  <TextField fx:id="pt_Register_Name" layoutX="35.0" layoutY="171.0" prefHeight="36.0" prefWidth="263.0" promptText="Full name " styleClass="textfield" stylesheets="@application.css" />
+                  <PasswordField fx:id="pt_Register_pass" layoutX="36.0" layoutY="321.0" prefHeight="36.0" prefWidth="263.0" promptText=" Password" styleClass="textfield" stylesheets="@application.css" />
+                  <JFXButton id="Button" layoutX="34.0" layoutY="371.0" onAction="#pt_Register_Btn" prefHeight="36.0" prefWidth="263.0" styleClass="btn" stylesheets="@application.css" text="Sign Up">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="36.0" layoutY="494.0" prefHeight="18.0" prefWidth="125.0" text=" Back Sign In Page">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="34.0" layoutY="523.0" onAction="#pt_singntologin" prefHeight="36.0" prefWidth="263.0" styleClass="btn" stylesheets="@application.css" text="Sign In">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <TextField fx:id="pt_Register_Email" layoutX="35.0" layoutY="223.0" prefHeight="36.0" prefWidth="263.0" promptText="Email Id" styleClass="textfield" stylesheets="@application.css" />
+                  <TextField fx:id="pt_Register_username" layoutX="36.0" layoutY="272.0" prefHeight="36.0" prefWidth="263.0" promptText="Username" styleClass="textfield" stylesheets="@application.css" />
+                  <FontAwesomeIconView fill="#b93636" glyphName="USERS" layoutX="126.0" layoutY="111.0" selectionFill="#b93636" size="70" />
+                  <Label layoutX="80.0" layoutY="130.0" prefHeight="30.0" prefWidth="175.0" text="Sign Up Account" textFill="#011712">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="128.0" layoutY="14.0" prefHeight="30.0" prefWidth="75.0" text="patient" textFill="#000303">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="Anchorpane" fx:id="Login_form" layoutX="7.0" layoutY="5.0" prefHeight="579.0" prefWidth="332.0" styleClass="white_background" stylesheets="@application.css">
+               <children>
+                  <FontAwesomeIconView fill="#c76565" glyphName="HOSPITAL_ALT" layoutX="118.0" layoutY="424.0" size="10em" />
+                  <TextField fx:id="Pt_SignIn" layoutX="34.0" layoutY="166.0" prefHeight="36.0" prefWidth="263.0" promptText="Username" styleClass="textfield" stylesheets="@application.css" />
+                  <PasswordField fx:id="pt_showPassword" layoutX="35.0" layoutY="219.0" prefHeight="36.0" prefWidth="263.0" promptText="Password" styleClass="textfield" stylesheets="@application.css" />
+                  <JFXButton id="Button" layoutX="33.0" layoutY="272.0" onAction="#pt_Sign_Btn" prefHeight="36.0" prefWidth="263.0" styleClass="btn" stylesheets="@application.css" text="Sign In">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="17.0" layoutY="538.0" prefHeight="18.0" prefWidth="216.0" text="If Patient don't have an account ?">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="243.0" layoutY="529.0" onAction="#pt_WenttoRegisterpage" prefHeight="36.0" prefWidth="75.0" styleClass="btn" stylesheets="@application.css" text="Sign Up">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXComboBox fx:id="Patient_selectAcc" layoutX="37.0" layoutY="485.0" onAction="#Switch" prefHeight="27.0" prefWidth="255.0" promptText="Select Account" style="-fx-border-color: black;" stylesheets="@application.css">
+                     <styleClass>
+                        <String fx:value="combobox" />
+                        <String fx:value="btn" />
+                     </styleClass></JFXComboBox>
+                  <Label layoutX="73.0" layoutY="453.0" text=" Sign In Other Account">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="128.0" layoutY="7.0" prefHeight="30.0" prefWidth="86.0" text="patient" textFill="#170202">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="83.0" layoutY="130.0" prefHeight="30.0" prefWidth="175.0" stylesheets="@application.css" text="Sign In Account" textFill="#220202">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="#b93636" glyphName="USERS" layoutX="127.0" layoutY="105.0" selectionFill="#b93636" size="70" styleClass="btn" />
+                  <FontAwesomeIconView fx:id="Patient_cancel" glyphName="CLOSE" layoutX="296.0" layoutY="32.0" size="30" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

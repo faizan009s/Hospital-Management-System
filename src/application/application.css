@@ -1,0 +1,134 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.white_bg{
+	-fx-background-color: #fff;
+}
+
+.btn{
+	-fx-background-color: #930a14;
+	-fx-font-family: Arial;
+	-fx-font-size: 14px;
+	-fx-text-fill: #fff;
+	
+}
+.btn:hover{
+	-fx-background-color: linear-gradient(to bottom right,#930a14,#de2533);
+	
+}
+.btnDr{
+	-fx-background-color: #73193e;
+	-fx-font-family: Arial;
+	-fx-font-size: 14px;
+	-fx-text-fill: #fff;
+	
+}
+.btnDr:hover{
+	-fx-background-color: linear-gradient(to bottom right,#73193e,#b02c62);
+}
+.btnAd{
+	-fx-background-color: #126380;
+	-fx-font-family: Arial;
+	-fx-font-size: 14px;
+	-fx-text-fill: #fff;
+	
+}
+.btnAd:hover{
+	-fx-background-color: linear-gradient(to bottom right,#10ace3,#126380);
+}
+.btn2{
+	-fx-background-color: #287E97;
+	-fx-font-family: Arial;
+	-fx-font-size: 14px;
+	-fx-text-fill: #fff;
+	
+}
+.btn2:hover{
+	-fx-background-color: linear-gradient(to bottom right,#188ba7,#306090);
+}
+
+.textfield{
+	-fx-border-color:#000;
+	-fx-border-width:.5px;
+	-fx-border-radius:6;
+}
+.textfield:focused{
+		-fx-border-color: Linear-gradient(to bottom right,#16a47c,#2a827b);
+		-fx-border-width: .8px;
+	
+}
+.combobox{
+	-fx-border-color: #148f77;
+	-fx-border-width:.5px;
+	-fx-border-radius:6;
+}
+
+/*Admin Dashboard  */
+.border-top{
+    -fx-border-color: #000;
+    -fx-border-width: .5px 0 .4px 0;
+}
+
+.header-1{
+    -fx-border-color: linear-gradient(to bottom right, #188ba7, #306090);
+    -fx-border-width: 0 0 0 2px;
+    -fx-padding: 0 0 0 5px;
+}
+
+.header-2{
+    -fx-border-color: linear-gradient(to bottom right, #a413a1, #64308e);
+    -fx-border-width: 0 0 0 2px;
+    -fx-padding: 0 0 0 5px;
+}
+
+.radius{
+    -fx-background-radius: 5px;
+}
+
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5,0,0,0);
+}
+
+.bg-color-1{
+    -fx-background-color: linear-gradient(to bottom right, #188ba7, #306090);
+}
+
+.bg-color-2{
+    -fx-background-color: linear-gradient(to bottom right, #a413a1, #64308e);
+}
+
+.nav-btn-1{
+    -fx-background-color: transparent;
+    -fx-border-color: #fff;
+    -fx-border-width: .5px;
+    -fx-text-fill: #fff;
+    -fx-font-family: Arial;
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+    -fx-alignment: CENTER_LEFT;
+}
+.nav-btn-1:hover{
+    -fx-background-color: #fff;
+    -fx-text-fill: #000;
+}
+
+
+.table-view{
+    -fx-padding: 0;
+    -fx-border-radius: 8px;
+    -fx-border-color: linear-gradient(to bottom right, #188ba7, #306090);
+}
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom right, #188ba7, #306090);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 8px 8px 0 0 ;
+}
+.table-view .column-header, .filter{
+    -fx-size: 40px;
+    -fx-background-color: transparent;
+}
+.table-view .column-header .label{
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+}
+.button3:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
